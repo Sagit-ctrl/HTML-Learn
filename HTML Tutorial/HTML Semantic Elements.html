@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements</title>
+
+    <style>
+        .all-browsers {
+          margin: 0;
+          padding: 5px;
+          background-color: lightgray;
+        }
+        
+        .all-browsers > h1, .browser {
+          margin: 10px;
+          padding: 5px;
+        }
+        
+        .browser {
+          background: white;
+        }
+        
+        .browser > h2, p {
+          margin: 4px;
+          font-size: 90%;
+        }
+
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- đây là các phần tử có ý nghĩa -->
+    <img src="Semantic.PNG">
+
+    <!-- thẻ section chứa 1 phần của document -->
+    <!-- Một trang web thông thường có thể được chia thành 
+        các phần để giới thiệu, nội dung và thông tin liên hệ. -->
+
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international 
+            organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+        
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. 
+            The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+
+    <!-- thẻ article chứa các thông tin khép kín có ý nghĩa -->
+    <!-- Vd của article: -->
+    <!-- Forum post
+    Blog post
+    Newspaper article -->
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </article>
+
+    <!-- Phần tử <header> đại diện cho một vùng chứa cho nội dung giới thiệu hoặc một tập hợp các liên kết điều hướng. -->
+    <!-- one or more heading elements (<h1> - <h6>)
+    logo or icon
+    authorship information -->
+    <!-- Bạn có thể có nhiều phần tử <header> trong một tài liệu HTML. Tuy nhiên, <header> không thể được đặt trong một phần tử <footer>, <address> hoặc một phần tử <header> khác. -->
+    <article>
+        <header>
+            <h1>What Does WWF Do?</h1>
+            <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+        and build a future in which humans live in harmony with nature.</p>
+    </article>
+
+    <!-- Phần tử <footer> xác định chân trang cho một tài liệu hoặc phần. -->
+    <!-- Thông tin về quyền tác giả 
+        Thông tin bản quyền 
+        Thông tin liên lạc 
+        Sơ đồ trang web
+        Quay lại liên kết hàng đầu 
+        Tài liệu liên quan -->
+    <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+    <!-- Phần tử <nav> xác định một tập hợp các liên kết điều hướng. -->
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+    <!-- Phần tử <aside> xác định một số nội dung ngoài nội dung mà nó được đặt vào (như một thanh bên). -->
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+    <aside>
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+    <!-- Thẻ <figure> chỉ định nội dung độc lập, như hình minh họa, sơ đồ, ảnh, danh sách mã, v.v. -->
+    <!-- Thẻ <figcaption> xác định phụ đề cho phần tử <figure>. Phần tử <figcaption> có thể được đặt làm phần tử đầu tiên hoặc là phần tử con cuối cùng của phần tử <figure>. -->
+    <!-- Phần tử <img> xác định hình ảnh / hình minh họa thực tế. -->
+    <figure>
+        <img src="Computer.jpg" alt="Trulli">
+        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+
+
+
+
+</body>
+</html>

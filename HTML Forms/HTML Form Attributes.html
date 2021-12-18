@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attributes</title>
+</head>
+<body>
+    
+    <!-- thuộc tính action định nghĩa đích của form khi bấm submit -->
+    <!-- thường thì sẽ gửi data lên server khi ấn submit -->
+    <!-- nếu ko có action thì sẽ đặt là đang hiện tại -->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- thẻ target chỉ cách trang mới hiện ra -->
+    <!-- _blank	trả về 1 trang mới hoặc tab mới
+    _self	trả về trang hiện tại
+    _parent	trả về khung cha
+    _top	trả về 1 tab full màn hình
+    framename	hiện ra trong 1 iframe -->
+    <form action="/action_page.php" target="_blank">
+    
+    <!-- có 2 phương thức xác định cách submit là get và post -->
+    <form action="/action_page.php" method="get"></form>
+    <form action="/action_page.php" method="post"></form>
+    <!-- post thì an toàn hơn get -->
+
+    <!-- thuộc tính autocomplete dùng để tự động điền vào lần sau -->
+    <form action="/action_page.php" autocomplete="on"></form>
+
+    <!-- novalidate sẽ không xác thực cho dữ liệu đc gửi -->
+    <form action="/action_page.php" novalidate></form>
+
+    
+
+
+
+
+
+
+</body>
+</html>

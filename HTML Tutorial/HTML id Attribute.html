@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML id Attribute</title>
+    <style>
+        #myHeader {
+          background-color: lightblue;
+          color: black;
+          padding: 40px;
+          text-align: center;
+        }
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- id tạo ra một phần tử độc nhất trong văn bản -->
+    <!-- không thể có hơn 1 phần tử cùng id -->
+    <!-- giá trị của id là duy nhất trong 1 HTML document -->
+    <!-- id chỉ đến 1 phần tử cụ thế và cũng có thể dùng bở JS -->
+    <!-- syntax: #idname{} -->
+    <h1 id="myHeader">My Header</h1>
+
+    <!-- id phân biệt chữ hoa và chữ thường -->
+    <!-- bắt đầu bởi ít nhất 1 kí tự, ko bắt đầu bằng số, khong chứa khoảng trắng -->
+
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <!-- id có thể dùng như bookmarks -->
+    <!-- tiện trong các đoạn tài liệu dài -->
+    <h2 id="C4">Chapter 4</h2>
+    <a href="#C4">Jump to Chapter 4</a>
+    <!-- đã nó trong phần bookmarks -->
+
+    <!-- dùng trong JS bằng hàm getElementsById() -->
+    <script>
+        function displayResult() {
+          document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+
+
+
+
+</body>
+</html>

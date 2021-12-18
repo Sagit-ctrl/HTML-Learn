@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - The Head Element</title>
+</head>
+<body>
+    
+    <!-- các thẻ tiêu đề trong HTML -->
+    <!-- <title>, <style>, <meta>, <link>, <script>, and <base>. -->
+
+    <!-- thẻ head nằm giữa thẻ html và body -->
+    <!-- chứa metadata (data về data) hay siêu data -->
+    <!-- metadata ko hiển thị lên -->
+    <!-- metadata định nghĩa tất tần tật thông tin căn bản nhất của document -->
+
+    <!-- thẻ title định nghĩa tên của trang mà sẽ hiển thị trên browser -->
+    <!-- chỉ chứa chữ -->
+    <!-- tăng khả năng SEO của trang web -->
+    
+    <!-- thẻ style định nghĩa các thông tin về style của document -->
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: red;}
+        p {color: blue;}
+    </style>
+
+    <!-- thẻ link là đường dẫn các liên kết -->
+    <!-- nằm trong phần header -->
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!-- Phần tử <meta> thường được sử dụng để chỉ định bộ ký tự, 
+        mô tả trang, từ khóa, tác giả của tài liệu và cài đặt chế độ xem. -->
+
+    <!-- định nghĩa cách dịch document -->
+    <meta charset="UTF-8">
+
+    <!-- từ khóa cho search  -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- mô tả trang web -->
+    <meta name="description" content="Free Web tutorials">
+
+    <!-- tác giả trang web -->
+    <meta name="author" content="John Doe">
+
+    <!-- làm mới trang web mỗi 30s -->
+    <meta http-equiv="refresh" content="30">
+
+    <!-- cài đặt điểm nhìn để ok trên mọi thiết bị -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- phần tử script chứ JS -->
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+
+    <!-- thẻ base tạo ra target cho tất cả URL tương đối trong trang -->
+    <base href="https://www.w3schools.com/" target="_blank">
+
+
+
+
+</body>
+</html>

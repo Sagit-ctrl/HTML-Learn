@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML picture Element</title>
+</head>
+<body>
+    
+    <!-- thẻ picture giúp hiển thị hình ảnh khác nhau trên thiết bị khác nhau hoặc kích cỡ màn hình  -->
+    <!-- thẻ này giúp linh hoạt hơn trong việc thiết kế web -->
+    <!-- thẻ picture chứa nhiều thẻ source mà máy sẽ chọn dựa vào thuộc tính srcset của nó -->
+    <!-- thẻ source chứa thuộc tính media cho biết nó sẽ phù hợp vào màn hình nào nhất -->
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="cat.jpg">
+        <source media="(min-width: 465px)" srcset="Computer.jpg">
+        <img src="Coffee.jpg">
+    </picture>
+
+    <!-- luôn phải có thẻ img ở dưới, nó sẽ được chọn nếu ko có source nào phù hợp -->
+
+    <!-- có 2 mục đích khi sử dụng thẻ picture -->
+    <!-- 1. Nó sẽ tiết kiệm băng thông khi thiết bị có màn hình nhỏ hoặc băng thông bé -->
+    <!-- 2.Nhiều trình duyệt ko hỗ trợ tất cả các định dạng ảnh -->
+    <!-- trình duyệt sẽ dùng ảnh đầu tiên mà nó nhận ra, bỏ qua tất cả cái khác -->
+    <picture>
+        <source srcset="Computer.jpg">
+        <source srcset="Coffee.jpg">
+        <img src="cat.jpg" alt="Beatles" style="width:auto;">
+    </picture>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+<body>
+    
+    <!-- Đây là 1 hyperlinks -->
+    <!-- Khi trỏ chuột vào thì nhảy đến 1 trang khác hoặc 1 văn bản khác -->
+    <!-- Khi di chuột vào nó sex chuyển từ mũi tên thành bàn tay -->
+    <!-- thẻ a định nghĩa 1 siêu liên kết -->
+    <a href="url">link text</a>
+    <br>
+
+    <!-- bắt buộc phải có href, đây là đích đến của thẻ -->
+    <!-- link text là chữ mà người khác có thể nhìn đc -->
+    <!-- click vào link text nó sẽ nhảy đến link trong href -->
+
+    <!-- Mặc định trong trình duyệt: -->
+    <!-- Link chưa kích vào sẽ có màu xanh và gạch chân -->
+    <!-- Link đã vào sẽ có màu tím và được gạch chân -->
+    <!-- Link đã kích hoạt có màu đỏ và gạch chân -->
+
+    <!-- Theo mặc định, trang được liên kết sẽ được hiển thị trong cửa sổ trình duyệt hiện tại. 
+        Để thay đổi điều này, bạn phải chỉ định một mục tiêu khác cho liên kết. -->
+
+    <!-- thuộc tính target chỉ định nơi mở document -->
+    <!-- _self - Mặc định. Mở ở cửa sổ hiện tại -->
+    <a href="https://www.w3schools.com/" target="_self">Visit W3Schools! Self1</a><br>
+    <a href="https://www.w3schools.com/" >Visit W3Schools! Self2</a><br>
+
+    <!-- _blank - Mở ở trang hoặc cửa sổ mới -->
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools! Blank</a><br>
+
+    <!-- _parent - Mở ở khung cha mẹ ?-->
+    <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools! Parent</a><br>
+
+    <!-- _top - Mở full màn hình ? -->
+    <a href="https://www.w3schools.com/" target="_top">Visit W3Schools! Top</a>
+
+    <!-- URL tuyệt đối và URL tương đối -->
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+    <!-- Sử dụng ảnh như 1 link bằng cách nhét thẻ img vào trong thẻ a -->
+    <a href="https://www.google.com/">
+        <img src="cat.jpg" alt="HTML tutorial" style="width:100px;height:auto;">
+    </a><br>
+
+    <!-- sử dụng mailto: trong thẻ href tạo 1 liên kết mở chương trình email -->
+    <a href="mailto:duckid55@gmail.com">Send email</a><br>
+
+    <!-- để sử dụng 1 nút để gửi link phải nhúng JS  -->
+    <!-- JS cho phép bạn xác định sự kiện gì xảy ra với 1 nút -->
+    <button onclick="document.location='Home.html'">HTML Tutorial</button><br>
+
+    <!-- thuộc tính title tạo ra sự mô tả cho link khi di chuột qua -->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">
+        Visit our HTML Tutorial</a><br>
+
+    
+
+
+</body>
+</html>

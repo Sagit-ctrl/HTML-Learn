@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes</title>
+</head>
+<body>
+    
+    <!-- Iframes dùng để hiển thị trang web bên trong trang web -->
+    <!-- Iframe là 1 thẻ inline -->
+    <!-- thẻ iframe dùng để nhúng 1 đoạn document khác vào document hiện tại -->
+    <iframe src="url" title="description"></iframe><br>
+    <!-- sẽ khá tốt nếu có title vì cái này thường xuyên đc đọc bởi nội dung bên trong iframe -->
+    
+    <!-- sử dụng thuộc tính width và height để xét độ lớn cho iframe -->
+    <iframe src="https://www.google.com/" height="200" width="300" title="Iframe Example"></iframe>
+
+    <!-- có thế add style vào -->
+    <iframe src="https://www.youtube.com/" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+    <!-- mặc định iframe luôn có border -->
+    <!-- bỏ border bằng cách sửa style -->
+    <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+    <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+    <!-- iframe có thể sử dụng như 1 target cho 1 link -->
+    <!-- thuộc tính target chỉ vào tên của iframe -->
+    <iframe src="https://www.w3schools.com" name="iframe_a" title="Iframe Example"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+    
+
+
+
+</body>
+</html>

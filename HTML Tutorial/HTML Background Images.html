@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Background Images</title>
+
+    <!-- cũng có thể dùng style để cài cái này
+    <style>
+        div {
+          background-image: url('img_girl.jpg');
+        }
+    </style> -->
+
+
+</head>
+<body>
+    
+    <!-- để thêm ảnh nền cho phần tử sử dụng thuộc tính background-image -->
+    <!-- <div style="background-image: url('cat.jpg');">hihi</div> -->
+
+    <!-- để đặt ảnh nền cho cả web thì phải có thuộc tính background-image trong thẻ body -->
+    <!-- <style>
+        body {
+          background-image: url('cat.jpg');
+        }
+    </style> -->
+
+    <!-- nếu ảnh quá bé nó sẽ lặp lại cái ảnh đến khi lấp đầy phần tử -->
+    <!-- để tránh sự lặp lại đặt thuộc tính background-repeat: no-repeat -->
+    <!-- <style>
+        body {
+          background-image: url('cat.jpg');
+          background-repeat: no-repeat;
+        }
+    </style> -->
+
+    <!-- nếu muốn cái ảnh bao toàn bộ nền thì cài background-size: cover -->
+    <!-- bên cạnh đó để chắc chắn lấp đầy thì đặt background-attachment: fixed -->
+    <!-- bằng cách này hình ảnh sẽ lấp đầy mà ko bị kéo dãn, vẫn giữ tỉ lệ ban đầu -->
+    <!-- <style>
+        body {
+          background-image: url('cat.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style> -->
+
+    <!-- nếu muốn cái ảnh căng ra vừa phần tử có thể set background-size: 100%100$ -->
+    <!-- nếu tăng giảm độ lớn cửa sổ cái ảnh cũng căng giãn ra theo n luôn lấp kín -->
+    <!-- <style>
+        body {
+          background-image: url('cat.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+    </style> -->
+
+
+
+
+
+
+
+
+</body>
+</html>

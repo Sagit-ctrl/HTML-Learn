@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Maps</title>
+</head>
+<body>
+    
+    <!-- với HTML image maps , bạn có thể tạo một vùng có thể chọn trên ảnh -->
+    <!-- thẻ map định nghĩa một bản đồ ảnh. Một bản đồ ảnh có 1 ảnh có thể chọn -->
+    <!-- khu vực được định nghĩa với một hoặc nhiều thẻ area -->
+    <img src="Image_map.jpg" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="Computer.jpg">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="Phone.jpg">
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="Coffee.jpg">
+    </map>
+
+    <!-- khi bạn nhấn vào mỗi 1 vùng ảnh nó sẽ trả về 1 cái link dẫn đến nơi khác nhau -->
+    <!-- thuộc tính usemap sẽ hướng cái ảnh đến nơi cài đặt image map -->
+    <!-- thuộc tính usemap bắt đầu bằng # và sau đó là tên map -->
+    <!-- có thể dùng nhiều ảnh cho 1 image map -->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+    <!-- để tạo 1 map dùng thẻ map -->
+    <map name="workmap"></map>
+
+    <!-- thẻ area tạo ra các khu vực chọn trên image map -->
+    <!-- thuộc tính shape định nghĩa hình dạng của vùng chọn -->
+    <!-- rect - tạo ra 1 hình chữ nhật -->
+    <!-- circle - tạo ra 1 hình tròn -->
+    <!-- poly - tạo ra 1 đa thức đã định nghĩa sẵn -->
+    <!-- default - toàn bộ khu vực -->
+
+    <!-- chắc chắn phải xác nhận khu vực có thể chọn -->
+
+    <!-- với rect sẽ có 2 cặp giá trị -->
+    <!-- 34,44 sẽ là tọa độ của điểm trên cùng bên trái -->
+    <!-- 270,350 sẽ là tọa độ của điểm dưới cùng bên phải -->
+    <!-- nch laf cứ chéo nhau là ok -->
+    <area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+    <!-- với circle có 2 cặp giá trị -->
+    <!-- 337,300 sẽ là tọa độ của điểm tâm -->
+    <!-- 44 là bán kính của hình tròn -->
+    <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+    <!-- với poly sẽ là vô số các điểm nối với nhau -->
+    <!-- cứ 1 cặp sẽ là 1 điểm ứng với 1 cặp tọa độ x,y -->
+    <!-- như VD có 12 điểm -->
+    <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,
+    140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+
+    <!-- có thể nhúng JS vào trong thẻ area -->
+    <!-- nhét các thuộc tính JS vào thẻ area -->
+    <map name="workmap">
+        <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+    </map>
+      
+    <script>
+      function myFunction() {
+        alert("You clicked the coffee cup!");
+      }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

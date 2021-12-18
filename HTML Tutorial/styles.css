@@ -1,0 +1,31 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+p { 
+    /* vòng bao xung quanh chữ */
+    border: 2px solid black;
+    /* màu chữ */
+    color: red;
+    /* phông chữ */
+    font-family: courier;
+    /* cỡ chữ */
+    font-size: 160%;
+    /* vùng bao xung quang chữ nhưng bên trong border */
+    padding: 30px;
+    /* vùng bao bên ngoài border */
+    margin: 50px;
+}
+
+/* The CSS color property defines the text color to be used. */
+/* The CSS font-family property defines the font to be used. */
+/* The CSS font-size property defines the text size to be used. */
+/* The CSS border property defines a border around an HTML element. */
+/* The CSS padding property defines a padding (space) between the text and the border. */
+/* The CSS margin property defines a margin (space) outside the border. */

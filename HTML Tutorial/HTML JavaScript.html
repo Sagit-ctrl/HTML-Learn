@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript</title>
+</head>
+<body>
+    
+    <!-- JS tạo hiệu ứng cho trang web -->
+    <!-- để trong cặp thẻ script -->
+    <!-- dùng để thay đổi biểu mẫu, hình ảnh, nội dung -->
+    <!-- có thể tự thay đổi hoặc trỏ đến 1 script khác bằng thuộc tính src -->
+    
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <!-- JS có thể thay đổi style -->
+    <script>
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.backgroundColor = "yellow";
+    </script>
+
+    <!-- JS có thể thay đổi thuộc tính -->
+    <img src="cat.jpg" id="image">
+    <script>
+        document.getElementById("image").src = "Coffee.jpg";
+    </script>
+
+    <!-- thẻ noscript dùng để thay thế script trong th ko tìm đc nó -->
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Khi di chuột lên link */
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+button:link{
+    width: 100px;
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: white;
+}
+
+button:hover{
+    width: 200px;
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    color: red;
+}
+
+button:active{
+    width: 100px;
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: white;
+}
+
+button:visited{
+    width: 100px;
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: white;
+}
+

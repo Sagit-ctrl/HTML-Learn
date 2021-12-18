@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Unordered Lists</title>
+
+    <style>
+
+        #u0a{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        #l01 {
+            float: left;
+        }
+
+        #l01 a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        #l01 a:hover{
+            background-color: #111111;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- thẻ ul định nghĩa 1 danh sách ko có thứ tự -->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- để chọn marks ta dùng thuộc tính list-style-type -->
+    <!-- Disc hình chấm tròn -->
+    <ul style="list-style-type:disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- Circle hình tròn màu trắng -->
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- Square hình vuông -->
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- None ko có gì cả -->
+    <ul style="list-style-type:none;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- Lists có thể lồng vào nhau (list trong list) -->
+    <!-- trong thẻ li có thể chứa bất cứ thứ gì như list khác, ảnh, text -->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- để tạo 1 list ngang cần có phần style -->
+    <ul id="u0a">
+        <li id="l01"><a href="#home">Home</a></li>
+        <li id="l01"><a href="#news">News</a></li>
+        <li id="l01"><a href="#contact">Contact</a></li>
+        <li id="l01"><a href="#about">About</a></li>
+    </ul>
+
+
+
+</body>
+</html>

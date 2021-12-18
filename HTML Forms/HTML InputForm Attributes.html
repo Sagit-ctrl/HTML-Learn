@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML InputForm Attributes</title>
+</head>
+<body>
+    
+    <!-- formaction dùng để điều hướng ngay trong nút submit -->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+
+    <!-- formenctype để chỉ dẫn cách mã hóa trong method post -->
+    <!-- cách mã hóa nằm trong form-data -->
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data">
+    </form>
+
+    <!-- formmethod dùng để định nghĩa method ngay trong nút submit -->
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit using GET">
+        <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
+
+    <!-- formtarget dùng để điều hướng ngay trong nút submit -->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+    </form>
+
+    <!-- formnovalidate điều khiển việc có xác nhận định dạng hay ko -->
+    <form action="/action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formnovalidate="formnovalidate"
+        value="Submit without validation">
+    </form>
+
+    <form action="/action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+</html>

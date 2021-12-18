@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+
+    <style>
+
+        /* tạo ra border cho bảng */
+        /* nhớ tạo border cho tất cả table,td,tr */
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        /* để gộp nhiều border vào 1 dùng border-collapse: collapse */
+        /* table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        } */
+
+        /* Cell padding là khoảng trắng giữa nội dung và bao của cell */
+        /* nếu ko cài padding, cell sẽ hiển thị mà ko có padding */
+        th, td {
+            padding: 15px;
+        }
+
+        /* để căn chữ trong cell dùng text-align */
+        th {
+            text-align: left;
+        }
+
+        /* border-spacing là khoảng trắng giữa các cell */
+        /* để tạo nó dùng border-spacing */
+        /* nếu đang border-collapse thì border-spacing sẽ ko hoạt động */
+        table {
+            border-spacing: 5px;
+        }
+
+        /* style đặc biệt cho id t01 */
+        #t01 {
+            width: 100%;
+            background-color: #f1f1c1;
+        }
+        /* định dạng các dòng chẵn */
+        #t01 tr:nth-child(even) {
+            background-color: red;
+        }
+        /* định dạng các dòng lẻ */
+        #t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        /* định dạng đầu đề */
+        #t01 th {
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- dùng để định dạng dữ liệu vào các hàng và cột -->
+    <!-- thẻ table dùng để định nghiax bảng -->
+    <!-- mỗi thẻ hàng định nghĩa bằng thẻ tr -->
+    <!-- mỗi đầu đề định nghĩa bằng thẻ th -->
+    <!-- mỗi phần tử cell trong hàng định nghĩa bằng thẻ td -->
+    <!-- mặc định th in đậm và căn giữa -->
+    <!-- td in đều và căn trái  -->
+    <!-- thẻ td có thể chứa mọi định dạng như ảnh, text,.... -->
+    <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+    </table>
+
+    <!-- để tạo ra cell nhiều hơn một cột, sử dụng colspan -->
+    <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+          <td>55577855</td>
+        </tr>
+    </table>
+
+    <!-- để tạo ra 1 cell chứa nhiều hơn 1 hàng sử dụng rowspan -->
+    <table style="width:100%">
+        <tr>
+          <th>Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone:</th>
+          <td>55577854</td>
+        </tr>
+        <tr>
+          <td>55577855</td>
+        </tr>
+    </table>
+
+    <!-- để tạo ra caption dùng thẻ caption -->
+    <!-- thẻ caption phải đc khai báo ngay sau thẻ table -->
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$50</td>
+        </tr>
+    </table>
+
+    <!-- để thêm style cho bảng, thêm id -->
+    <table id="t01">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- thẻ colgroup nhóm các cột trong 1 bảng vào 1 dạng format -->
+    <!-- col định nghĩa các cột trong colgroup -->
+    <!-- thead nhóm các cell chứa header -->
+    <!-- tbody nhóm các cell chứa nội dung -->
+    <!-- tfooter nhóm các cell dưới cùng -->
+
+
+</body>
+</html>

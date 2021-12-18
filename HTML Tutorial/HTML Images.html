@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+<body>
+    
+    <!-- dùng thẻ img để liên kết ảnh -->
+    <!-- ảnh không được nhúng vào html mà chỉ giữ liên kết tới ảnh -->
+    <!-- thẻ img trống, chỉ có thuộc tính, không có thẻ kết thúc -->
+    <!-- thẻ img có 2 thuộc tính là src, alt -->
+    <img src="url" alt="alternatetext">
+
+    <!-- chú ý ảnh phải để cùng vị trí với html -->
+    <!-- khi trang web load nó sẽ load ảnh, nếu ko có nó sẽ báo lỗi và hiển thị chữ thay thế -->
+    <!-- thẻ alt dùng để chứa chữ thay thế ảnh trong th chưa load đc ảnh -->
+    <img src="cat.jpg" alt="Cat Image">
+    <img src="cats.jpg" alt="Cat Image"><br>
+
+    <!-- có thể dùng stylr để chỉnh độ lớn của ảnh -->
+    <!-- chiều dài và rộng luôn định nghĩa pixel của ảnh -->
+    <!-- luôn có độ lớn, không trang web sẽ bị flick -->
+    <img src="cat.jpg" alt="Cat Image" style="width:100px;height:auto;"><br>
+    <img src="cat.jpg" alt="Cat Image" width="100" height="auto"><br>
+
+    <!-- độ lớn có thể để vào thẻ style -->
+    <!-- có thể liên kết ảnh đến folder khác -->
+    <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
+    <!-- có thể liên kết ảnh đến web khác -->
+    <!-- cái này ko khuyến khích lắm -->
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"><br>
+
+    <!-- cho phép dùng ảnh động -->
+    <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"><br>
+
+    <!-- có thể coi ảnh như 1 link -->
+    <a href="default.asp">
+        <img src="cat.jpg" alt="Cat Image" style="width:42px;height:42px;">
+    </a><br>
+
+    <!-- vị trí tương đối của ảnh so với text -->
+    <p><img src="cat.jpg" alt="Cat Image" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.</p>
+        
+    <p><img src="cat.jpg" alt="Cat Image" style="float:left;width:42px;height:42px;">
+        The image will float to the left of the text.</p>
+
+    <!-- thẻ img địng nghĩa ảnh -->
+    <!-- thẻ map dùng để định nghĩa thẻ bản đồ -->
+    <!-- thẻ area dùng để định nghĩa một khu vực có thể click bên trong 1 bản đồ -->
+    <!-- thẻ picture định nghĩa một container cho nguồn nhiều ảnh -->
+
+
+</body>
+</html>
